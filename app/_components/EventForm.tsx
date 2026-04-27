@@ -67,7 +67,7 @@ export default function EventForm() {
           <span className="font-semibold">EventMatch</span>
           <span className="ml-auto flex items-center gap-1.5 text-xs text-white/40">
             <Zap className="w-3 h-3 text-yellow-400" />
-            Gemini 2.0 Flash · Apify
+            GPT-4o mini · Apify
           </span>
         </div>
       </header>

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.64",
+    "@ai-sdk/openai": "^3.0.53",
     "ai": "^6.0.168",
     "apify-client": "^2.23.0",
     "clsx": "^2.1.0",

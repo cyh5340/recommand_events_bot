@@ -2,7 +2,7 @@
 
 import { ApifyClient } from 'apify-client'
 import { generateObject } from 'ai'
-import { google } from '@ai-sdk/google'
+import { openai } from '@ai-sdk/openai'
 import { z } from 'zod'
 import platformsConfig from '@/platforms.json'
 
@@ -123,10 +123,10 @@ export async function getEventRecommendations(
   location: string,
 ): Promise<RecommendResult> {
   const apifyToken = process.env.APIFY_TOKEN
-  const googleKey  = process.env.GOOGLE_GENERATIVE_AI_API_KEY
+  const openaiKey  = process.env.OPENAI_API_KEY
 
   if (!apifyToken) return { error: 'APIFY_TOKEN is not configured.' }
-  if (!googleKey)  return { error: 'GOOGLE_GENERATIVE_AI_API_KEY is not configured.' }
+  if (!openaiKey)  return { error: 'OPENAI_API_KEY is not configured.' }
 
   const apify = new ApifyClient({ token: apifyToken })
   const { platforms } = platformsConfig
@@ -166,7 +166,7 @@ export async function getEventRecommendations(
       .join('\n\n')
 
     const { object } = await generateObject({
-      model: google('gemini-2.0-flash'),
+      model: openai('gpt-4o-mini'),
       schema: EventSchema,
       system: SYSTEM_PROMPT,
       prompt: `<user_context>

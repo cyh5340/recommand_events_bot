@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  serverExternalPackages: ['apify-client', 'ai', '@ai-sdk/google', 'zod'],
+  serverExternalPackages: ['apify-client', 'ai', '@ai-sdk/openai', 'zod'],
   experimental: {
     serverActions: {
       bodySizeLimit: '4mb',
