@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm show *)",
+      "Bash(node *)",
+      "Bash(npm run *)",
+      "WebFetch(domain:apify.com)",
+      "WebFetch(domain:api.apify.com)"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    {
+      "name": "Lu.ma",
+      "url": "https://lu.ma/discover",
+      "type": "Community & Hacker",
+      "priority": 1,
+      "apify_actor": "matyascimbulka/luma-event-scraper",
+      "signal": "High for AI, Founders, and Crypto."
+    },
+    {
+      "name": "Partiful",
+      "url": "https://partiful.com/explore/san-francisco",
+      "type": "Social & Emerging Tech",
+      "priority": 3,
+      "apify_actor": "apify/website-content-crawler",
+      "signal": "Often used for 'after-parties' or casual mixer events."
+    },
+    {
+      "name": "SwarmTix",
+      "url": "https://swarmtix.com/discover",
+      "type": "Technical Conferences",
+      "priority": 2,
+      "apify_actor": "apify/website-content-crawler",
+      "signal": "Growing platform for serious multi-track tech conferences."
+    }
+  ],
+  "meta": {
+    "default_city": "San Francisco",
+    "last_updated": "2026-04-27"
+  }
+}
